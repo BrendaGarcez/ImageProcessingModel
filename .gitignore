@@ -1,1 +1,15 @@
+# Ignora arquivos de cache do Python
+__pycache__/
+*.py[cod]
+
+# Ignora arquivos de treinamento e resultados do YOLO
+runs/
+datasets/
+
+# Ignora arquivos de ambiente virtual
 venv/
+.env
+
+# Ignora arquivos de IDE
+.idea/
+.vscode/

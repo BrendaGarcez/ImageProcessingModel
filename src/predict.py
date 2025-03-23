@@ -1,11 +1,21 @@
-import os
+from model import load_model
 
-def predict_images(weights_path, source_path, output_path):
+def predict(image_path, model_path="runs/train/exp/weights/best.pt", conf=0.5):
     """
-    Faz previsões em novas imagens usando YOLOv5.
+    Faz a detecção de componentes em uma imagem usando o modelo YOLO.
+    
+    Args:
+        image_path (str): Caminho para a imagem de entrada.
+        model_path (str): Caminho para o arquivo de pesos do modelo (.pt).
+        conf (float): Limiar de confiança para as detecções.
+    
+    Returns:
+        results: Resultados da detecção.
     """
-    yolov5_path = "C:/caminho/para/o/repositorio/yolov5"  # Caminho do repositório YOLOv5
-    os.system(f"python {yolov5_path}/detect.py --weights {weights_path} --img 416 --conf 0.4 --source {source_path} --save-txt --project {output_path}")
-
-# Exemplo de uso
-predict_images("yolov5/runs/train/exp/weights/best.pt", "data/raw", "outputs")
+    # Carrega o modelo
+    model = load_model(model_path)
+    
+    # Faz a predição
+    results = model.predict(source=image_path, conf=conf, save=True)
+    
+    return results
