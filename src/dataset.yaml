@@ -1,0 +1,10 @@
+path: /projeto_placas/src
+train: images/train
+val: images/val
+names:
+  0: capacitor
+  1: resistor
+  2: transistor
+  3: diodo
+  4: cristal_oscilador
+  5: bobina

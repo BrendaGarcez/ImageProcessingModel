@@ -13,3 +13,7 @@ venv/
 # Ignora arquivos de IDE
 .idea/
 .vscode/
+
+*.pt
+*.jpg
+*.txt
