@@ -2,12 +2,13 @@ from ultralytics import YOLO
 
 def train():
     model = YOLO("yolov8n.pt")  # Modelo pré-treinado
+    model.train(data="config.yaml", epochs=100, workers=2)
     results = model.train(
-        data="dataset.yaml",
+        data="src/dataset.yaml",
         epochs=100,
         imgsz=640,
         batch=8,
-        device="0",  # GPU
+        device="cpu",  # GPU
         name="placas_v1"
     )
     return results

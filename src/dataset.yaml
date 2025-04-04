@@ -1,6 +1,6 @@
-path: /projeto_placas/src
-train: images/train
-val: images/val
+path: C:/Users/brend/Desktop/Meus Projetos/ImageProcessingModel/src
+train: C:/Users/brend/Desktop/Meus Projetos/ImageProcessingModel/src/images/train
+val: C:/Users/brend/Desktop/Meus Projetos/ImageProcessingModel/src/images/val
 names:
   0: capacitor
   1: resistor
@@ -8,3 +8,4 @@ names:
   3: diodo
   4: cristal_oscilador
   5: bobina
+  6: resistor_s
