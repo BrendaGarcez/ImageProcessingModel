@@ -2,7 +2,7 @@ from ultralytics import YOLO
 
 def train():
     model = YOLO("yolov8n.pt")  # Modelo pré-treinado
-    model.train(data="config.yaml", epochs=100, workers=2)
+    model.train(data="src/dataset.yaml", epochs=100, workers=2)
     results = model.train(
         data="src/dataset.yaml",
         epochs=100,
