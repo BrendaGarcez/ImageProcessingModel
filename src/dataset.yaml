@@ -1,7 +1,6 @@
 path: C:/Users/brend/Desktop/Meus Projetos/ImageProcessingModel/src
 train: C:/Users/brend/Desktop/Meus Projetos/ImageProcessingModel/src/images/train
 val: C:/Users/brend/Desktop/Meus Projetos/ImageProcessingModel/src/images/val
-nc: 12
 names:
   0: capacitor
   1: resistor
