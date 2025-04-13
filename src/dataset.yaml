@@ -1,7 +1,7 @@
 path: C:/Users/brend/Desktop/Meus Projetos/ImageProcessingModel/src
 train: C:/Users/brend/Desktop/Meus Projetos/ImageProcessingModel/src/images/train
 val: C:/Users/brend/Desktop/Meus Projetos/ImageProcessingModel/src/images/val
-nc: 7
+nc: 12
 names:
   0: capacitor
   1: resistor
@@ -10,3 +10,5 @@ names:
   4: cristal_oscilador
   5: bobina
   6: resistor_s
+  7: bateria
+  8: buzzer
